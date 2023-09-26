@@ -116,7 +116,7 @@ fun getAll(filter: CharSequence?): Any {
         }) {
             Column(modifier = Modifier.padding(1.dp)) {
                 Text(text = it.name)
-                Text(text = "Canonical: $it.canonicalName", fontSize = 2.5.em)
+                Text(text = "Canonical: ${it.canonicalName}", fontSize = 2.5.em)
                 Row {
                     Text(text = "HW Accelerated: ${it.isHardwareAccelerated}", fontSize = 2.5.em)
                     Spacer(modifier = Modifier.size(2.dp))
